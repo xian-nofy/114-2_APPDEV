@@ -3,7 +3,7 @@
 > **APP 開發課程** ｜ 第 11 週 ｜ 5/7
 > **教科書**：Ch07 進階介面元件
 > **單元**：7-1 下拉式選單實習　/　7-2 列舉清單方塊實習　/　7-3 接合器變更顯示項目實習　/　7-4 選項選單與動作列實習
-> **課後作業繳交期限**：W12 上課前（5/13）
+> **本週不出作業**——所有題目皆為**課後練習（選項，不繳交、不計分）**
 > **進階補充**：📖 [課後進階練習（選項）— 從 ListView 進化到 RecyclerView](advanced.md)
 
 ---
@@ -362,15 +362,16 @@ public boolean onOptionsItemSelected(MenuItem item) {
 
 ---
 
-## 六、本週作業
+## 六、課後練習（選項）
 
-> 繳交方式：在你 fork 的 `114-2_APPDEV/week11/` 建立**一個 Android Studio 專案**完成下列功能，push 到你的 fork（沿用學期既有 PR）
+> ⚙️ **本週不出作業**——以下題目為**課後練習，不繳交、不計分、自由探索**。
+> 想練手感、想做完整 mini app、或想為期末專題暖身的同學適合動手。
 
-### 作業：海洋生物分類查詢 App（整合 Ch07 四節觀念）
+### 練習：海洋生物分類查詢 App（整合 Ch07 四節觀念）
 
 設計一個「**海洋生物分類查詢**」App，整合本週 Spinner、ListView、ArrayAdapter、Options Menu 四元件。
 
-#### 功能規格
+#### 功能規格（全部選做）
 
 | 區塊 | 元件 | 內容 |
 |---|---|---|
@@ -379,9 +380,9 @@ public boolean onOptionsItemSelected(MenuItem item) {
 | 3. 詳細顯示 | `TextView` | 點擊清單某項後顯示「你選的是：海豚」 |
 | 4. 動作選單 | `Options Menu` | 至少 2 項：「重置選擇」「顯示總生物數」 |
 
-#### 技術要求
+#### 技術重點（自我檢核）
 
-| # | 要求 |
+| # | 重點 |
 |---|---|
 | 1 | Spinner 用 `entries` 屬性綁分類字串陣列資源 |
 | 2 | Spinner 用 `OnItemSelectedListener` 偵測分類切換 |
@@ -389,13 +390,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 | 4 | ListView 用 `OnItemClickListener` 顯示點擊項目 |
 | 5 | Options Menu 在 `res/menu/menu_main.xml` 定義，用 `onCreateOptionsMenu` + `onOptionsItemSelected` 處理 |
 
-#### 繳交清單
-
-| # | 內容 |
-|---|---|
-| 1 | Android Studio 專案資料夾（含 `app/`、`build.gradle` 等）|
-| 2 | 模擬器執行截圖 **2 張**：① 切換 Spinner 後 ListView 內容變化 ② Options Menu 展開畫面 |
-| 3 | `README.md`：列出你 4 個分類各放了哪 5 種以上生物，並簡述為什麼這樣分類 |
+> 📌 寫完想分享或卡關，課堂提問或在 Discord/LINE 群討論皆可，**不必發 PR**。
 
 ---
 
